@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>Index</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="styles/common.css" />
+    <link rel="stylesheet" href="styles/index.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="body-div">
+      <header>
+        <img src="assests/images/logo.png" id="logo" alt="logo" />
+        <button
+          id="login-btn"
+          type="button"
+          class="btn btn-light"
+          data-toggle="modal"
+          data-target="#loginModal"
+        >
+          LOGIN
+        </button>
+      </header>
+      <section id="content-container">
+        <section id="search-bar">
+          <input id="search-bar-input" type="text" placeholder="City" />
+        </section>
+        <section id="city-cards">
+          <div class="city-image">
+            <a href="list.html">
+              <img
+                src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/a2/new-delhi.jpg"
+                alt="Delhi"
+              />
+              <div class="city-name-div">
+                <span class="city-name">Delhi</span>
+              </div>
+            </a>
+          </div>
+          <div class="city-image">
+            <img
+              src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fc/f0/goa.jpg"
+              alt="Goa"
+            />
+            <div class="city-name-div">
+              <span class="city-name">Goa</span>
+            </div>
+          </div>
+          <div class="city-image">
+            <img
+              src="https://media-cdn.tripadvisor.com/media/photo-s/0f/98/f7/df/charminar.jpg"
+              alt="Hyderabad"
+            />
+            <div class="city-name-div">
+              <span class="city-name">Hyderabad</span>
+            </div>
+          </div>
+          <div class="city-image">
+            <img
+              src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/ac/kolkata-calcutta.jpg"
+              alt="Kolkata"
+            />
+            <div class="city-name-div">
+              <span class="city-name">Kolkata</span>
+            </div>
+          </div>
+        </section>
+        <!-- <br /> -->
+        <section id="view-more">
+          <a href="index.html" class="btn btn-secondary">View more</a>
+        </section>
+      </section>
+      <footer>
+        <button
+          id="contact-btn"
+          type="button"
+          class="btn btn-info"
+          data-toggle="modal"
+          data-target="#contactModal"
+        >
+          Contact Us
+        </button>
+        <section id="copyright">&copy; 2020 ROOM SEARCH PVT. LTD.</section>
+        <section id="social-media-container">
+          <a href="https:/www.facebook.com" target="_blank"
+            ><img
+              src="assests\images\facebook.png"
+              class="social-media"
+              alt="Facebook"
+          /></a>
+          <a href="https:/www.instagram.com" target="_blank"
+            ><img
+              src="assests\images\instagram.png"
+              class="social-media"
+              alt="Instagram"
+          /></a>
+          <a href="https:/www.twitter.com" target="_blank"
+            ><img
+              src="assests\images\twitter.png"
+              class="social-media"
+              alt="Twitter"
+          /></a>
+        </section>
+      </footer>
+
+      <!-- login modal -->
+      <div
+        class="modal"
+        id="loginModal"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Please Login</h5>
+              <button
+                type="button"
+                class="close"
+                data-dismiss="modal"
+                aria-label="Close"
+              >
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <form id="modal-form" action="index.html" method="get">
+                <div class="input-container">
+                  <label for="username">Username:</label>
+                  <input
+                    type="text"
+                    name="username"
+                    id="username"
+                    placeholder="Enter Username"
+                    required
+                  />
+                </div>
+                <div class="input-container">
+                  <label for="password">Password:</label>
+                  <input
+                    type="password"
+                    name="password"
+                    id="password"
+                    placeholder="Enter Password"
+                    autocomplete="off"
+                    required
+                  />
+                </div>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <input type="submit" class="btn btn-primary" value="Login" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- contact modal -->
+      <div
+        class="modal"
+        id="contactModal"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Get in touch</h5>
+              <button
+                type="button"
+                class="close"
+                data-dismiss="modal"
+                aria-label="Close"
+              >
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <p>Thank you for reaching out!!!</p>
+              <p>Please enter your email and we will get back to you.</p>
+              <form action="index.html" method="get">
+                <div>
+                  <label for="useremail">Email:</label>
+                  <input
+                    type="email"
+                    name="useremail"
+                    id="useremail"
+                    placeholder="Enter your email id"
+                    required
+                  />
+                </div>
+              </form>
+            </div>
+            <div id="modal-footer-2" class="modal-footer">
+              <input type="submit" class="btn btn-primary" value="Submit" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  </body>
+</html>

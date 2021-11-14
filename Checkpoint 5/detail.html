@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DETAILS</title>
+    <link rel="stylesheet" href="styles/detail.css">
+    <link rel="stylesheet" href="styles/common.css">
+</head>
+
+<body>
+    <!--Header Div-->
+    <header>
+        <div>
+            <div id="Header">
+                <a href="index.html"><img id="logo" src="assests/images/logo.png" alt="logo" height="60" width="60"></a>
+                <a href="login.html" target="_blank">Login</a>
+            </div>
+        </div>
+    </header>
+    <!--Content Div-->
+    <section>
+        <div id="Content">
+
+            <div id="Radison">
+                <div>
+                    <img id="radisonimage"
+                        src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg"
+                        alt="Radison Blu Hotel" height="200" width="250">
+
+                    <!-- <p><b>Name: </b>John Dov</p>
+            <p><b>Number of Adults: </b>2</p>
+            <p><b>Cheack in Date: </b>20.10.2020</p>
+            <p><b>Cheack out Date: </b>25.10.2020</p>
+            <p><b>Tarrif Break Down: </b>Rs 1000*2Adults*5Nights</p>
+            <p><b>Total: </b>Rs 10000</p>
+            <section><a href="#">Pay Now</a></section>   -->
+
+                    <form action="payment.html" method="get">
+                        <label for="Adults">Adults: </label>
+                        <input type="number" name="Adults" id="booking" min="1" required autocomplete="off"><br>
+                        <label for="Name">Name: </label>
+                        <input type="text" name="Name" id="boking" placeholder="Enter Name" required
+                            autocomplete="off"><br>
+                        <label for="Cin">Check In Date: </label>
+                        <input type="date" name="Cin" id="booking"><br>
+                        <label for="Cout">Check out Date: </label>
+                        <input type="date" name="Cout" id="booking" required autocomplete="off"><br>
+                        <label for="Total">Total: </label>
+                        <input type="text" name="Total" id="boolking" disabled><br>
+                        <button type="submit">Book Now</button>
+                    </form>
+
+                    <h2>Radison Blu Hotel</h2>
+                    <section>Rating</section>
+                    <p>5 star</p>
+                    <section>Amenities</section>
+                    <ul>
+                        <li>Room Service</li>
+                        <li>Business Center</li>
+                        <li>Restaurent</li>
+                        <li>Fitness Center</li>
+                        <li>Pool</li>
+                    </ul>
+                </div>
+                <div id="discription">
+                    <h5>Description</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis provident magni ex
+                        repellendus assumenda labore iusto consectetur alias incidunt eveniet! Voluptates commodi
+                        dolorum, quaerat nulla sit fugit quidem porro quam?</p>
+
+                </div>
+            </div>
+    </section>
+    <!--Footer Div-->
+
+    <footer>
+        <div id="Footer">
+            <a href="contact.html" target="_blank">Contact Us</a>
+            <div id="socialMedia">
+                <a href="https://www.facebook.com/" target="_blank"><img id="socialmedia"
+                        src="assests/images/facebook.png" alt="facebook" height="20px" width="22px"></a>
+                <a href="https://www.instagram.com/" target="_blank"><img id="socialmedia"
+                        src="assests/images/instagram.png" alt="instagram" height="20px" width="22px"></a>
+                <a href="https://www.twitter.com/" target="_blank"><img id="socialmedia"
+                        src="assests/images/twitter.png" alt="twitter" height="20px" width="22px"></a>
+            </div>
+            <div id="copyRight">
+                <p> &copy; 2020. ROOM SEARCH PVT LTD</p>
+            </div>
+        </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

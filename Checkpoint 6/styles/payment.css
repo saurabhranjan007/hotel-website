@@ -1,0 +1,22 @@
+.images{
+    height: 500px;
+    width: 500px;
+}
+#Hotel-Details{
+    background-color: rgb(132, 136, 139);
+    width: 50%;
+    height: 20%;
+    margin: 2% auto;
+}
+#Customer-Details{
+    margin: 2%;
+}
+#tarrif-details{
+    margin: 2%;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 1% 2%;
+}
+#pay-now{
+    margin-bottom: 3%;
+}

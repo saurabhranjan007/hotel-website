@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Detail</title>
+    <link rel="stylesheet" href="styles/common.css" />
+    <link rel="stylesheet" href="styles/detail.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+    <div id="body-div">
+        <header>
+            <img src="assests/images/logo.png" id="logo" style="height: 60px; width: 60px;" alt="logo">
+            <a href="login.html" id="login">Login</a>
+        </header>
+        <section>
+            <div>
+                <section id="details-container">
+                    <div id="image-div">
+                        <img src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg"
+                            class="hotel-image-detail" alt="Radisson Blu Hotel" />
+                    </div>
+                    <form id="form" action="payment.html" method="get">
+                        <div class="form-input">
+                            <label for="num">Adults: </label>
+                            <input required type="number" name="num" value="1" min="1" />
+                        </div>
+                        <div class="form-input">
+                            <label for="name">Name: </label>
+                            <input required type="text" name="name" autocomplete="off" />
+                        </div>
+                        <div class="form-input">
+                            <label for="in_date">From Date: </label>
+                            <input required type="date" name="in_date" />
+                        </div>
+                        <div class="form-input">
+                            <label for="out_date">To Date: </label>
+                            <input required type="date" name="out_date" />
+                        </div>
+                        <div class="form-input">
+                            <label for="amount">Total: </label>
+                            <input name="amount" type="number" disabled required />
+                        </div>
+                        <div id="book-now-button">
+                            <input type="submit" value="Book Now" />
+                        </div>
+                    </form>
+            </div>
+        </section>
+        <section id="hotel-description">
+            <h2>Radisson Blu Hotel</h2>
+            <p class="headings">RATING</p>
+            <p>5 Star</p>
+            <p class="headings">AMENITIES</p>
+            <ul>
+                <li>Room service</li>
+                <li>Restaurant</li>
+                <li>Business center</li>
+                <li>Fitness center</li>
+                <li>Pool</li>
+            </ul>
+            <h5 class="headings">DESCRIPTION</h5>
+            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum asperiores impedit facilis accusantium
+                iure iste sint, architecto laborum ducimus eligendi! Nulla expedita ducimus doloremque
+                blanditiis, obcaecati saepe eligendi incidunt ipsa!</p>
+        </section>
+        </section>
+        <footer>
+            <section id="contact-us">
+                <a href="contact.html">Contact Us</a>
+            </section>
+            <section id="copyright">&copy; 2020 ROOM SEARCH PVT. LTD.</section>
+            <section id="social-media-container">
+                <a href="https:/www.facebook.com" target="_blank"><img src="assests\images\facebook.png"
+                        class="social-media" alt="Facebook" /></a>
+                <a href="https:/www.instagram.com" target="_blank"><img src="assests\images\instagram.png"
+                        class="social-media" alt="Instagram" /></a>
+                <a href="https:/www.twitter.com" target="_blank"><img src="assests\images\twitter.png"
+                        class="social-media" alt="Twitter" /></a>
+            </section>
+        </footer>
+    </div>
+</body>
+
+</html>

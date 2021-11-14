@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>List</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles/common.css" />
+    <link rel="stylesheet" href="styles/list.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="body-div">
+      <header>
+        <a href="index.html">
+          <img src="assests/images/logo.png" alt="logo" id="logo" />
+        </a>
+        <!-- <a href="login.html" id="login">Login</a> -->
+        <button
+          id="login-btn"
+          type="button"
+          class="btn btn-light"
+          data-toggle="modal"
+          data-target="#loginModal"
+        >
+          LOGIN
+        </button>
+        <!-- <br />
+        <span>Header Div</span> -->
+      </header>
+      <section id="content-container">
+        <!-- <span>Content Div</span> -->
+        <section id="view-container">
+          <!-- new -->
+          <ul class="nav nav-pills" id="pills-tab">
+            <li class="nav-item">
+              <a class="nav-link active" data-toggle="pill" href="#list-View"
+                >List View</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="pill" href="#map-View">Map View</a>
+            </li>
+          </ul>
+        </section>
+        
+        <div class="tab-content" id="pills-tab-content">
+        <div class="tab-pane fade show active" id="list-View" role="tabpanel" aria-labelledby="pills-home-tab">
+        <div id="list-view">
+          <a href="detail.html">
+            <section class="hotel-image-container">
+              <img
+                src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg"
+                class="hotel-image"
+                alt="Radisson Blu Hotel"
+              />
+              <div class="hotel-details">
+                <h3>Radisson Blu Hotel</h3>
+                <!-- <p>5 Star</p> -->
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <p>New Delhi</p>
+              </div>
+            </section>
+          </a>
+
+          <section class="hotel-image-container">
+            <img
+              src="https://media-cdn.tripadvisor.com/media/photo-w/15/06/31/5f/facade.jpg"
+              class="hotel-image"
+              alt="Lalit Hotel"
+            />
+            <div class="hotel-details">
+              <h3>The Lalit New Delhi</h3>
+              <!-- <p>4.5 Star</p> -->
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star-half-o checked"></span>
+              <p>New Delhi</p>
+            </div>
+          </section>
+          <section class="hotel-image-container">
+            <img
+              src="https://media-cdn.tripadvisor.com/media/photo-w/1b/4e/9b/11/exterior.jpg"
+              class="hotel-image"
+              alt="Taj Palace"
+            />
+            <div class="hotel-details">
+              <h3>Taj Palace</h3>
+              <!-- <p>4.0 Star</p> -->
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star"></span>  
+              <p>New Delhi</p>
+            </div>
+          </section>
+        </div>
+      </div>
+      <div class="tab-pane fade" id="map-View" role="tabpanel" aria-labelledby="pills-profile-tab">
+        <div id="map-view">
+          <img
+            src="https://cdn.pixabay.com/photo/2018/01/31/05/43/web-3120321_960_720.png"
+            alt="Map view"
+          />
+        </div>
+        </div>
+      </div>
+      </section>
+      <footer>
+        <!-- <span>Footer Div</span> -->
+        <!-- <section id="contact-us">
+          <a href="contact.html">Contact Us</a>
+        </section> -->
+        <button
+        id="contact-btn"
+        type="button"
+        class="btn btn-info"
+        data-toggle="modal"
+        data-target="#contactModal"
+      >
+        Contact Us
+      </button>
+        <section id="copyright">&copy; 2020 ROOM SEARCH PVT. LTD.</section>
+        <section id="social-media-container">
+          <a href="https:/www.facebook.com" target="_blank"
+            ><img
+              src="assests\images\facebook.png"
+              class="social-media"
+              alt="Facebook"
+          /></a>
+          <a href="https:/www.instagram.com" target="_blank"
+            ><img
+              src="assests\images\instagram.png"
+              class="social-media"
+              alt="Instagram"
+          /></a>
+          <a href="https:/www.twitter.com" target="_blank"
+            ><img
+              src="assests\images\twitter.png"
+              class="social-media"
+              alt="Twitter"
+          /></a>
+        </section>
+      </footer>
+
+      <div
+        class="modal"
+        id="loginModal"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Please Login</h5>
+              <button
+                type="button"
+                class="close"
+                data-dismiss="modal"
+                aria-label="Close"
+              >
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <form id="modal-form" action="index.html" method="get">
+                <div class="input-container">
+                  <label for="username">Username:</label>
+                  <input
+                    type="text"
+                    name="username"
+                    id="username"
+                    placeholder="Enter Username"
+                    required
+                  />
+                </div>
+                <div class="input-container">
+                  <label for="password">Password:</label>
+                  <input
+                    type="password"
+                    name="password"
+                    id="password"
+                    placeholder="Enter Password"
+                    autocomplete="off"
+                    required
+                  />
+                </div>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <input type="submit" class="btn btn-primary" value="Login" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- contact modal -->
+      <div
+        class="modal"
+        id="contactModal"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Get in touch</h5>
+              <button
+                type="button"
+                class="close"
+                data-dismiss="modal"
+                aria-label="Close"
+              >
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <p>Thank you for reaching out!!!</p>
+              <p>Please enter your email and we will get back to you.</p>
+              <form action="index.html" method="get">
+                <div>
+                  <label for="useremail">Email:</label>
+                  <input
+                    type="email"
+                    name="useremail"
+                    id="useremail"
+                    placeholder="Enter your email id"
+                    required
+                  />
+                </div>
+              </form>
+            </div>
+            <div id="modal-footer-2" class="modal-footer">
+              <input type="submit" class="btn btn-primary" value="Submit" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    </div>
+  </body>
+</html>
