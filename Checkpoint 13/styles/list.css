@@ -1,0 +1,102 @@
+.hotel-image {
+  height: 200px;
+  width: 250px;
+}
+
+.hotel-image-container {
+  margin: 4% 5% 0% 5%;
+  background-color: lightgrey;
+  width: 40%;
+  float: left;
+  display: flex;
+  justify-content: start;
+  align-content: center;
+}
+
+.hotel-image-container:hover {
+  background-color: rosybrown;
+}
+
+ul {
+  list-style: none;
+  padding: 0%;
+  margin-bottom: 0% !important;
+}
+
+li {
+  display: inline;
+  color: black;
+  /* margin: 1.5% 0px; */
+  /* padding: 1.5%; */
+}
+
+#pills-tab {
+  justify-content: center;
+}
+
+#content-container {
+  height: 700px;
+  width: 100%;
+}
+
+.hotel-details {
+  display: block;
+  margin: 2% 2.5%;
+}
+
+/* leaflet */
+.tab {
+  display: flex;
+  margin: 1.5rem auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.tab-item {
+  color: black;
+  padding: 0.5rem 0.5rem;
+  border-radius: 0.25rem;
+}
+.active {
+  background-color: #007bff;
+}
+
+#map {
+  position: absolute;
+  height: 68vh;
+  top: 22.5%;
+  width: 100%;
+  padding: 3rem;
+  background-color: #e0e0e0;
+}
+
+.leaflet-popup-content-wrapper,
+.leaflet-popup-tip {
+  background-color: #e0e0e0;
+}
+
+.popup-para {
+  margin: 0% !important;
+  font-size: 14px;
+}
+
+.popup-link {
+  text-decoration: underline !important;
+}
+
+@media only screen and (max-width: 768px) {
+  .hotel-image-container {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin-bottom: 5%;
+  }
+
+  #map img {
+    width: 100%;
+  }
+
+  #map {
+    text-align: center;
+  }
+}
